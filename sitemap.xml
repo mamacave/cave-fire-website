@@ -2,43 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://cavefireprotection.com/</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://cavefireprotection.com/form.html</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cavefireprotection.com/blog-nfpa25-inspection-arizona.html</loc>
-    <lastmod>2026-05-05</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://cavefireprotection.com/blog-fire-sprinkler-inspection-phoenix.html</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-05-07</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cavefireprotection.com/blog-backflow-testing-arizona.html</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cavefireprotection.com/blog-wet-vs-dry-sprinkler-systems.html</loc>
+    <lastmod>2026-05-07</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cavefireprotection.com/privacy.html</loc>
-    <lastmod>2026-05-05</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  <url>
-    <loc>https://cavefireprotection.com/accessibility.html</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-05-07</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>

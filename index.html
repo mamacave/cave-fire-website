@@ -113,12 +113,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600;700;900&family=Old+Standard+TT:wght@400;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    :root{ --navy:#0F1B2D; --navy-600:#142235; --red:#C7362F; --offwhite:#F5F7FA; --black:#111216; }
+    :root{ --navy:#0F1B2D; --navy-600:#142235; --red:#D92B2B; --offwhite:#F5F7FA; --black:#111216; }
     .font-heading{font-family:"Old Standard TT",serif}
     .font-body{font-family:"Lato",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
     .btn{border-radius:1rem;padding:.9rem 1.25rem;font-weight:700;display:inline-flex;align-items:center;gap:.5rem;transition:.15s ease}
     .btn-primary{background:var(--navy);color:#fff}
     .btn-primary:hover{background:var(--navy-600)}
+    .btn-red{background:var(--red);color:#fff}
+    .btn-red:hover{background:#b81f1f}
     .card{background:#fff;border-radius:1rem;box-shadow:0 10px 30px rgba(0,0,0,.08)}
     .section{padding:5rem 0}
     .logo{height:64px;max-width:520px;object-fit:contain;filter: drop-shadow(0 1px 2px rgba(0,0,0,.35));}
@@ -179,17 +181,14 @@
           <p class="mt-5 text-white/90 text-lg max-w-xl">Code-correct inspection, testing, and repairs with clear reports and scheduling that respects your operations. Phoenix-based, serving the Valley.</p>
           <div class="mt-8 flex flex-wrap gap-3 items-center">
             <a href="form.html" class="btn btn-primary">Request Service</a>
-            <a href="tel:+16237593323" class="btn" style="background:var(--red);color:#fff;">Call (623) 759-3323</a>
+            <a href="tel:+16237593323" class="btn" class="btn-red">Call (623) 759-3323</a>
           </div>
           <div class="mt-8 text-white/85 text-sm leading-relaxed max-w-2xl">
-            <div class="flex flex-wrap gap-x-3 gap-y-1 items-center">
-              <span>✓ Licensed &amp; Insured</span>
-              <span>•</span>
-              <span>✓ AZ ROC #363226</span>
-              <span>•</span>
-              <span>✓ CR-16 Certified</span>
-              <span>•</span>
-              <span>✓ BBB Accredited</span>
+            <div class="flex flex-wrap gap-x-4 gap-y-2 items-center mt-6 text-sm">
+              <span class="flex items-center gap-1.5"><svg class="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>AZ ROC #363226</span>
+              <span class="flex items-center gap-1.5"><svg class="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>CR-16 Licensed</span>
+              <span class="flex items-center gap-1.5"><svg class="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>BBB Accredited</span>
+              <span class="flex items-center gap-1.5"><svg class="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Licensed &amp; Insured</span>
             </div>
             <div class="mt-2 text-white/75">Commercial & mixed-use: restaurants, property management, retail, warehouses, medical, schools, offices, hospitality.</div>
           </div>
@@ -204,20 +203,35 @@
     </div>
   </section>
 
-  <section class="section">
+  <section class="section" style="background:var(--offwhite)">
     <div class="mx-auto max-w-7xl px-4 md:px-6">
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="card p-6">
-          <h3 class="font-heading text-xl">Code-correct, on time</h3>
-          <p class="mt-2 text-slate-600">Annual, quarterly, five-year, and acceptance tests—performed to standard and scheduled to minimize disruption.</p>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="flex gap-4">
+          <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center mt-1" style="background:var(--red)">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <div>
+            <h3 class="font-heading text-xl">Code-correct, on time</h3>
+            <p class="mt-2 text-slate-600 text-sm leading-relaxed">Annual, quarterly, five-year, and acceptance tests performed to standard and scheduled to minimize disruption.</p>
+          </div>
         </div>
-        <div class="card p-6">
-          <h3 class="font-heading text-xl">Clear documentation</h3>
-          <p class="mt-2 text-slate-600">Photo-rich reports with clear next steps—easy for your team, AHJ, and insurer to reference.</p>
+        <div class="flex gap-4">
+          <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center mt-1" style="background:var(--red)">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+          </div>
+          <div>
+            <h3 class="font-heading text-xl">Clear documentation</h3>
+            <p class="mt-2 text-slate-600 text-sm leading-relaxed">Photo-rich reports with clear next steps—easy for your team, AHJ, and insurer to review and file.</p>
+          </div>
         </div>
-        <div class="card p-6">
-          <h3 class="font-heading text-xl">Straightforward options</h3>
-          <p class="mt-2 text-slate-600">What matters now vs. what can wait—so you can fix, plan, or phase without surprises.</p>
+        <div class="flex gap-4">
+          <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center mt-1" style="background:var(--red)">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+          </div>
+          <div>
+            <h3 class="font-heading text-xl">Straightforward options</h3>
+            <p class="mt-2 text-slate-600 text-sm leading-relaxed">What needs fixing now vs. what can wait—so you can plan and budget without surprises or pressure.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -299,6 +313,38 @@
           <a class="mt-6 btn btn-primary inline-flex justify-center" href="form.html">Start service request</a>
           <p class="mt-4 text-sm text-slate-500">Prefer email? Send details to <a class="underline" href="mailto:service@cavefireprotection.com">service@cavefireprotection.com</a>.</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Blog / Resources Section -->
+  <section class="section bg-white">
+    <div class="mx-auto max-w-7xl px-4 md:px-6">
+      <div class="max-w-2xl mb-10">
+        <span class="text-xs font-semibold uppercase tracking-widest" style="color:var(--red)">Resources</span>
+        <h2 class="font-heading text-3xl mt-2">Fire Protection Guides</h2>
+        <p class="mt-3 text-slate-600">Practical information for property managers, facility directors, and business owners across Arizona.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <a href="blog-nfpa25-inspection-arizona.html" class="card p-6 flex flex-col hover:shadow-xl transition-shadow group">
+          <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--red)">Compliance</div>
+          <h3 class="font-heading text-xl text-slate-900 group-hover:underline leading-snug">NFPA 25 Inspection Requirements in Arizona</h3>
+          <p class="mt-3 text-slate-600 text-sm flex-1">Inspection frequencies, what gets tested, and what property managers need to know to stay compliant with Arizona fire codes.</p>
+          <div class="mt-5 text-sm font-semibold flex items-center gap-1" style="color:var(--navy)">Read guide <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></div>
+        </a>
+        <a href="blog-backflow-testing-arizona.html" class="card p-6 flex flex-col hover:shadow-xl transition-shadow group">
+          <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--red)">Backflow</div>
+          <h3 class="font-heading text-xl text-slate-900 group-hover:underline leading-snug">Backflow Preventer Testing in Arizona</h3>
+          <p class="mt-3 text-slate-600 text-sm flex-1">What Arizona requires, how the test works, and why bundling it with your sprinkler inspection saves time and money.</p>
+          <div class="mt-5 text-sm font-semibold flex items-center gap-1" style="color:var(--navy)">Read guide <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></div>
+        </a>
+        <a href="blog-wet-vs-dry-sprinkler-systems.html" class="card p-6 flex flex-col hover:shadow-xl transition-shadow group">
+          <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--red)">Systems</div>
+          <h3 class="font-heading text-xl text-slate-900 group-hover:underline leading-snug">Wet vs. Dry Pipe Sprinkler Systems: What Arizona Properties Need to Know</h3>
+          <p class="mt-3 text-slate-600 text-sm flex-1">The key differences between wet and dry pipe systems, which one your property likely has, and what that means for maintenance.</p>
+          <div class="mt-5 text-sm font-semibold flex items-center gap-1" style="color:var(--navy)">Read guide <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></div>
+        </a>
       </div>
     </div>
   </section>
