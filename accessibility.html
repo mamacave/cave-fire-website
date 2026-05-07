@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Cave Fire Protection LLC accessibility statement. We strive to meet WCAG 2.1 AA guidelines. Contact us for accessibility assistance." />
+  <meta name="robots" content="noindex, follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Accessibility | Cave Fire Protection</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600;700;900&family=Old+Standard+TT:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{ --navy:#0F1B2D; --navy-600:#142235; --red:#C7362F; }
+    .font-heading{font-family:"Old Standard TT",serif}
+    .font-body{font-family:"Lato",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    .btn{border-radius:1rem;padding:.9rem 1.25rem;font-weight:700;display:inline-flex;align-items:center;gap:.5rem;transition:.15s ease}
+    .btn-primary{background:var(--navy);color:#fff}
+    .btn-primary:hover{background:var(--navy-600)}
+  </style>
+</head>
+<body
+   class="font-body text-slate-800 bg-white">
+  <header class="sticky top-0 z-50" style="background: var(--navy);">
+    <div class="mx-auto max-w-7xl px-4 md:px-6">
+      <div class="flex items-center justify-between py-1">
+        <a href="index.html" class="text-white font-heading text-xl">Cave <span style="color:var(--red)">Fire</span> Protection</a>
+        <a href="tel:+16237593323" class="btn btn-primary">Call (623) 759-3323</a>
+      </div>
+    </div>
+  </header>
+  <div id="subscribeBanner" class="hidden mx-auto max-w-4xl px-4 md:px-6 mt-6">
+    <div class="rounded-xl border border-green-200 bg-green-50 p-4 text-green-800">
+      <div class="font-semibold">Thanks — you’re on the list.</div>
+      <div class="text-sm">We’ll only email when there’s something useful.</div>
+    </div>
+  </div>
+
+
+  <main class="mx-auto max-w-4xl px-4 md:px-6 py-12">
+    <h1 class="font-heading text-4xl">Accessibility</h1>
+    <p class="mt-4 text-slate-600">We want our website to be usable for everyone, including people with disabilities. Our goal is to meet <strong>WCAG 2.1 AA</strong> guidelines and keep improving the experience as standards and assistive technologies evolve.</p>
+    <ul class="mt-6 text-slate-700 list-disc pl-6 space-y-2">
+      <li>Readable contrast and scalable text</li>
+      <li>Keyboard-friendly navigation</li>
+      <li>Meaningful link text and image alt text</li>
+      <li>Clear labels for forms and controls</li>
+    </ul>
+    <p class="mt-6 text-slate-600">If you encounter any barriers or need an alternate format (for example, an accessible PDF), please contact us. We’ll make reasonable efforts to accommodate your request.</p>
+    <div class="mt-6 flex flex-col md:flex-row gap-3">
+      <a href="mailto:office@cavefireprotection.com?subject=Accessibility%20Assistance" class="btn btn-primary">Email us for accessibility needs</a>
+      <a href="tel:+16237593323" class="btn" style="border:1px solid rgba(15,27,45,.2)">Call (623) 759-3323</a>
+    </div>
+  </main>
+
+  <footer class="text-white" style="background: var(--navy)">
+    <div class="mx-auto max-w-7xl px-4 md:px-6 py-10">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+        <div>
+          <div class="font-heading text-xl">Cave Fire Protection</div>
+          <div class="text-white/70 text-sm mt-1">Phoenix, AZ • Valleywide</div>
+          <div class="text-white/70 text-sm mt-1">Licensed • Bonded • Insured • CSA-4 • CR-16</div>
+          <div class="text-white/70 text-sm mt-1">
+            <a class="underline" href="https://maps.google.com/?q=2390%20E%20Camelback%20Rd%20Suite%20130%20Phoenix%2085016" target="_blank">
+              2390 E Camelback Rd, Suite 130, Phoenix, AZ 85016
+            </a>
+          </div>
+        </div>
+        
+        <div id="footer-subscribe" class="mt-6 card p-2 bg-white/5" style="background:rgba(255,255,255,0.06); border-radius:12px; max-width:360px;">
+          <div class="text-white/90 font-semibold">Get updates</div>
+          <p class="text-white/70 text-sm mt-1">Sign up for occasional updates and announcements.</p>
+          <form action="https://api.web3forms.com/submit" method="POST" class="mt-3 grid grid-cols-1 gap-2" enctype="multipart/form-data">
+            <input type="hidden" name="access_key" value="315694e9-72ac-4057-b7c0-05f2d559f316">
+            <input type="hidden" name="subject" value="Mailing List Signup – Cave Fire Protection">
+            <input type="hidden" name="from_name" value="Cave Fire Website">
+            <input type="hidden" name="page" value="accessibility.html">
+            <input type="hidden" name="type" value="mailing_list">
+            <input type="hidden" name="redirect" value="">
+            <input type="checkbox" name="botcheck" class="hidden" style="display:none">
+            <input name="email" type="email" placeholder="you@company.com" required
+                   class="px-2 py-2 rounded text-slate-900" style="border:1.5px solid rgba(255,255,255,0.35); background:#fff">
+            <button class="btn btn-primary px-3 py-2" type="submit">Subscribe</button>
+          </form>
+          <div class="text-white/60 text-xs mt-2">Unsubscribe anytime.</div>
+        </div>
+    
+        <div class="space-x-4">
+          <a href="index.html#services" class="text-white/80 hover:text-white">Services</a>
+          <a href="index.html#process" class="text-white/80 hover:text-white">What to Expect</a>
+          <a href="form.html" class="text-white/80 hover:text-white">Request Service</a>
+          <a href="privacy.html" class="text-white/70 hover:text-white">Privacy</a>
+          <a href="accessibility.html" class="text-white/70 hover:text-white">Accessibility</a>
+        </div>
+      </div>
+      <div class="mt-6 text-white/60 text-sm">© 2025 Cave Fire Protection. All rights reserved.</div>
+    </div>
+  </footer>
+</body>
+</html>

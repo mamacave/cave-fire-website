@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /privacy.html
+Disallow: /accessibility.html
+
+Sitemap: https://cavefireprotection.com/sitemap.xml
