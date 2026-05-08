@@ -148,7 +148,9 @@
           <input type="hidden" name="access_key" value="315694e9-72ac-4057-b7c0-05f2d559f316">
           <input type="hidden" name="subject" value="Service Request – Cave Fire Protection">
           <input type="hidden" name="from_name" value="Cave Fire Website">
-          <input type="hidden" name="redirect" value="">
+          <input type="hidden" name="redirect" value="https://cavefireprotection.com/form.html?submitted=true">
+          <input type="hidden" name="from_name" value="Cave Fire Website Form">
+          <input type="hidden" name="replyto" id="replytoField" value="">
           <input type="checkbox" name="botcheck" class="hidden" style="display:none">
 
           <!-- Section: Contact -->
@@ -385,6 +387,26 @@
         }
       } catch(e) {}
     })();
+  </script>
+
+  <script>
+    // Show success message if redirected back after submission
+    if(window.location.search.includes('submitted=true')){
+      var msg = document.getElementById('formSuccessMsg');
+      var form = document.getElementById('requestForm');
+      if(msg) msg.style.display = 'block';
+      if(form) form.style.display = 'none';
+      window.scrollTo({top:0, behavior:'smooth'});
+    }
+  </script>
+
+  <script>
+    // Wire reply-to field to customer email on input
+    var emailInput = document.getElementById('email');
+    var replytoField = document.getElementById('replytoField');
+    if(emailInput && replytoField){
+      emailInput.addEventListener('input', function(){ replytoField.value = this.value; });
+    }
   </script>
 </body>
 </html>
